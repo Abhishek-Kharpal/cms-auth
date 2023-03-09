@@ -2,7 +2,6 @@ const {redisClient} = require('../utils/redisUtil');
 const jwt = require('jsonwebtoken');
 
 const verifyToken = async (req, res) => {
-  //get token from header by splitting it from bearer
   const token = req.header('Authorization').split(' ')[1];
   if (!token) {
     return res.status(401).json({

@@ -2,10 +2,10 @@ const db = require('../../database/models/index');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { redisClient } = require('../utils/redisUtil');
-const login = async (username, password) => {
+const login = async (email, password) => {
   const user = await db.user.findOne({
     where: {
-      username
+      email
     }
   });
   if(!user){
