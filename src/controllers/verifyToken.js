@@ -29,6 +29,6 @@ const verifyToken = async (req, res) => {
       message: 'AUTHORIZED',
     });
   });
-}
+};
 
 module.exports = {verifyToken};

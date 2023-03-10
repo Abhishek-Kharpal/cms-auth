@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/Abhishek-Kharpal/cms-auth/issues"
   },
-  "homepage": "https://github.com/Abhishek-Kharpal/cms-auth#readme"
+  "homepage": "https://github.com/Abhishek-Kharpal/cms-auth#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
 }
